@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB PHP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <form method="post">
+            
+            <label for="red">RED</label><br>
+            <input id="red" type="text" id="red" name="red" ><br>
+            
+            <label for="green">GREEN</label><br>
+            <input type="text" id="green" name="green" ><br>
+            
+            <label for="blue">BLUE</label><br>
+            <input id="blue" type="text" id="blue" name="blue" ><br>
+            
+            <!-- <input id="button" type="submit" value="Submit"> -->
+            <!-- <a href="http://"></a> -->
+            <!-- <a>cliquez ici</a> -->
+
+
+            <!-- <button type="submit">Go</button> -->
+
+
+
+            <button>Cliquer ici</button>
+
+        </form> 
+        <div class="color">
+
+        </div>
+
+    </div>
+
+<script>
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', event => {
+  button.innerHTML = `Nombre de clics : ${event.detail}`;
+});
+
+
+    
+    // $("a").click(function() {
+    //     alert('Exemple 2');
+    // });
+
+
+
+
+
+    // function getColorHex () {
+    //     console.log("je suis dans getColorHex");
+    //     let red = document.getElementById("red").value;
+    //     console.log(red);
+    //     let blue = document.getElementById("blue").value;
+    //     console.log(blue);
+    //     let green = document.getElementById("green").value;
+    //     console.log(green);
+    //     return ('#'+red+green+blue) ;
+    // }
+    
+
+    const myDiv = document.querySelector('.color');
+    myDiv.style.backgroundColor = "lightblue";
+
+    // const btn = document.querySelector('input');
+
+    // btn.addEventListener('click', getColorHex);
+
+
+
+
+
+    //const myBlue = document.querySelector('label')
+
+    console.log("123");
+    // console.log(getColorHex());
+    
+
+    // let red = document.getElementById("red").value;
+    // console.log(red);
+    // let blue = document.getElementById("blue").value;
+    // console.log(blue);
+    // let green = document.getElementById("green").value;
+    // console.log(green);
+
+    let coloredBox = document.querySelector('.color') ;
+    //console.log(coloredBox);
+
+    // let c = '#'+red+green+blue;
+    // console.log(c);
+
+    // coloredBox.style.backgroundColor = c ;
+    // coloredBox.style.backgroundColor = getColorHex() ;
+        console.log("123456");
+
+</script>
+    
+</body>
+</html>
